@@ -101,6 +101,37 @@ p.ex1 {
         </pre>
       </p>
 
+      <hr>
+      <h2> Conference Presentation: Challenges of Distributed Generation </h2>
+
+      <script>
+        var slideImages = ["slide1.jpg"];
+        var currentSlide = 0
+
+        function showSlide() {
+          document.getElementById('slide').src = slideImages[currentSlide];
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slideImages.length;
+          showSlide();
+        }
+
+
+        function prevSlide() {
+          currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+          showSlide();
+        }
+
+
+        function showSlideNumber(slideNumber) {
+          currentSlide = slideNumber - 1;
+          showSlide;
+        }
+
+        showSlide();
+      </script>
+
     
      
 
